@@ -4115,6 +4115,34 @@ article.blog-single .blog-content {
     margin-bottom: 3.9rem;
 }
 
+.numbered-list {
+    /* 移除默认的列表样式 */
+    list-style-type: none;
+    /* 初始化计数器 */
+    counter-reset: list-counter;
+    padding-left: 0; /* 移除默认的填充 */
+}
+
+.numbered-list li {
+    /* 每个列表项前增加计数器 */
+    counter-increment: list-counter;
+    /* 通过:before伪元素显示计数器和定制的样式 */
+    position: relative; /* 使得:before伪元素相对于列表项定位 */
+}
+
+.numbered-list li:before {
+    /* 显示内容为计数器的值，后面接一个点和空格 */
+    content: counter(list-counter) ". ";
+    /* 定位伪元素 */
+    position: absolute;
+    left: -20px; /* 根据需要调整 */
+}
+
+.contact-method {
+    text-align: center;
+}
+
+
 
 /* ------------------------------------------------------------------- 
  * responsive:
