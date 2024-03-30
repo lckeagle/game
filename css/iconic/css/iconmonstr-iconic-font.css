@@ -514,6 +514,10 @@
 .im-facebook-like:before {
   content: '\e0a6';
 }
+.im-csdn:before {
+  content: '\e900';
+  color: #dd1700;
+}
 .im-twitter:before {
   content: '\e0a7';
 }
