@@ -138,6 +138,21 @@
                     ，迎接各种挑战，是生活始终不变的主旋律，热爱游戏，热爱生活，做一个始终保持饥饿的人，对渲染技术感兴趣的技术仔。
                 </p>
             </div>
+            <div class="col-full text-center">
+                <h1>个人优势</h1>
+                <p class="lead">
+                    1：了解引擎原理，能够对引擎问题进行修改和优化，提供完善的解决方案<br>
+                </p>
+                <p class="lead">
+                    2：热衷于自动化工具，提高效率<br>
+                </p>
+                <p class="lead">
+                    3：易于沟通，认真负责，对自己的产品负责<br>
+                </p>
+                <p class="lead">
+                    4：喜欢研究新技术，新方法<br>
+                </p>
+            </div>
         </div>
 
         <div class="row about-content">
@@ -232,19 +247,19 @@
                         <div class="timeline__desc">
                             <ul class="numbered-list">
                                 <li>
-                                    <strong>负责平台房间大厅各种小游戏的开发与制作</strong>
-                                </li>
-                                <li>
-                                    <strong>配合UI，产品，测试完成游戏需求，调整优化用户体验，优化游戏性能</strong>
-                                </li>
-                                <li>
-                                    <strong>负责Jenkins自动化构建游戏并发布S3静态服务器，维护现有代码支持活动相关，升级旧有项目到最新游戏引擎</strong>
+                                    <strong>负责自动化打包脚本，自动化压缩图片脚本，自动化压缩音频(ffmpeg)，Jenkins自动化构建游戏并发布S3静态服务器，维护现有代码支持活动相关，升级旧有项目到最新游戏引擎</strong>
                                 </li>
                                 <li>
                                     <strong>制作Cocos Creator的项目插件以供现有的项目使用，提高工作效率。</strong>
                                 </li>
                                 <li>
                                     <strong>研究Cocos Creator的最新技术，源码阅读，定制修改，Cocos3D游戏的探索。</strong>
+                                </li>
+                                <li>
+                                    <strong>负责平台房间大厅各种小游戏的开发与制作，抽离通用模板，达到最大程度的复用，利用bundle的强大能力实现多游戏共用公共组件库</strong>
+                                </li>
+                                <li>
+                                    <strong>负责一些骨骼动画的制作，3d模型的制作，美术提出的一些特效的需求，Shader的编写</strong>
                                 </li>
                             </ul>
                         </div>
@@ -260,7 +275,7 @@
                         <div class="timeline__desc">	
                             <p>
                                 1：负责伴鱼数学业务的线上小游戏课件的制作，制作提效的插件和工具，快速迭代游戏产品.<br/>
-                                2：与美术，UI，动画，测试对接游戏，完成上线.
+                                1：负责组内技术分享，插件开发提高工作效率.<br/>
                             </p>
                         </div>
                     </div> <!-- end timeline__block -->
@@ -281,7 +296,8 @@
                         <div class="timeline__desc">
                             <p>
                                 1：负责海豚思维数学线上教育游戏课件的研发发布<br/>
-                                2: 做一些内部的技术分享，沉淀新的业务基础组件
+                                2: 做一些内部的技术分享，沉淀新的业务基础组件<br>
+                                3：课件模版生成工具的制作，工程重构工具优化，游戏性能考察。<br>
                             </p>
                         </div>
                     </div> <!-- end timeline__block -->
@@ -297,7 +313,7 @@
                             <p>
                                 1：负责调研Cocos Creator H5小游戏，并且接入微信登录SDK,支付宝登录SDK,facekbook小游戏，打包原生平台（Android/IOS）游戏。<br/>
                                 2：负责微信小游戏/微信小程序的制作发布。<br/>
-                                3：负责优化游戏性能
+                                3：负责优化游戏性能<br>
                             </p>
                         </div>
                     </div> <!-- end timeline__block -->
@@ -314,11 +330,52 @@
     ================================================== -->
     <section id="works" class="s-works target-section">
 
+        <div class="row masonry-wrap">
+
+            <div class="col-full cta__content">
+
+                <div class="col-full">
+                    <h1>项目经历</h1>
+                    <div style="text-align: left;">
+                            <h3>1: 足球pk游戏 项目描述    所属公司（明日虫洞）</h3>
+                            <p>&nbsp;&nbsp;1: 负责整体的游戏逻辑，游戏逻辑框架的确定和搭建，协助美术骨骼动画的制作和切图事项.</p>
+                            <p>&nbsp;&nbsp;2: 骨骼动画性能的研究与优化（shared_cached模式），骨骼换肤技术实现.</p>
+                            <p>&nbsp;&nbsp;3: 人物占位六边形地图的生成，及根据人物多少进行合理排布.</p>
+                            <p>&nbsp;&nbsp;4: drawcall热点问题的优化，因为这个游戏的label很多，每个小人头上都有一个label，对label节点和骨骼动画进行分离，减少渲染压力.</p>
+                            <p>&nbsp;&nbsp;5：修改cocos 引擎的 render-flow.js代码，将之前的深度遍历改写成层级遍历，多加了一个渲染标记位.</p>
+                            <p>&nbsp;&nbsp;6：游戏资源的自动化压缩.</p>
+                            <p>&nbsp;&nbsp;7: 使用DragonBones制作部分动画效果（我们特效师比较忙哈哈，我来分担一些）。</p>
+                            <p>&nbsp;&nbsp;8: Socket消息消费队列。固定帧率运行游戏，防止不同性能设备画面出现严重偏差，消息队列积压的多了追帧消费速度变快，消息队列小了消费速度慢下来，实现动态消费socket消息</p>
+                    </div>
+                    <div style="text-align: left;">
+                            <h3>2: match3D   项目描述    所属公司（明日虫洞）</h3>
+                            <p>&nbsp;&nbsp;1: 前期Cocos 3D技术的探索，Cocos 3D插件的制作，提高工作效率，探索3D物理引擎的区别及选择。</p>
+                            <p>&nbsp;&nbsp;2: 物理系统的问题总结，换用Cocos中性能相对较好的Phyx物理引擎，解决3D物体物理穿模问题。</p>
+                            <p>&nbsp;&nbsp;3: 3D材质问题优化，将blender导入的材质资源统一换成Cocos 标准材质，勾选instance。</p>
+                            <p>&nbsp;&nbsp;4: 部分模型的制作，和协助美术人员对模型进行贴图，UV分割，模型点的合并问题进行指导和协商，blender中多个图片材质烘焙到一张贴图上。减少drawcall</p>
+                            <p>&nbsp;&nbsp;5: 场景层次结构实现，需要3d物体压住2dUI，借助Cocos多个摄像机的能力实现。</p>
+                            <p>&nbsp;&nbsp;6: 游戏资源的优化，64个模型的贴图资源集中到一张2048x2048的贴图上。但是通过blender打包出来的文件有材质资源，这样打包的时候每一个模型都自带了贴图资源导致打包出来的文件非常大，对这部分资源进行了优化。</p>
+                            
+                    </div>
+                    <div style="text-align: left;">
+                            <h3>3: 德州扑克   项目描述    所属公司（明日虫洞）</h3>
+                            <p>&nbsp;&nbsp;1: Socket消息的分级处理和组织。</p>
+                            <p>&nbsp;&nbsp;2: 部分游戏元素效果Shader的编写。游戏性能的优化，drawcall优化。</p>
+                            <p>&nbsp;&nbsp;3: 游戏中动画，粒子效果的优化，加载速度的优化。</p>
+                    </div>
+                    <div style="text-align: left;">
+                            <h3>4: BingoSlots   项目描述    所属公司（明日虫洞）</h3>
+                            <p>&nbsp;&nbsp;1: 游戏代码架构，jenkins构建，自动化打包脚本，联合升级其他游戏，所有的游戏同在一个项目里，打包的时候根据输入的游戏名称，来动态设置bundle，防止其他游戏资源打入包内，实现精准游戏发布的控制，一键完成。</p>
+                            <p>&nbsp;&nbsp;2: 部分游戏元素效果Shader的编写。游戏性能的优化，drawcall优化。</p>
+                    </div>
+                </div>
+            </div>
+
+        </div> 
+
         <div class="row narrow section-intro has-bottom-sep">
             <div class="col-full">
-                <h3>项目简介</h3>
                 <h1>最近的项目合集</h1>
-                
                 <p class="lead">Lorem ipsum Dolor adipisicing nostrud et aute Excepteur amet commodo ea dolore irure esse Duis nulla sint fugiat cillum ullamco proident aliquip quis qui voluptate dolore veniam Ut laborum non est in officia.</p>
             </div>
         </div>
@@ -589,6 +646,10 @@
             </div>
         </div> <!-- end masonry -->
 
+        
+        
+            
+
     </section> <!-- end works -->
 
 
@@ -736,8 +797,7 @@
     </section> <!-- end s-blog -->
 
 
-    <!-- s-cta
-    ================================================== -->
+    
     <!-- <section class="s-cta">
         
         <div class="row narrow cta">
@@ -760,8 +820,6 @@
         </div> 
         
     </section> -->
-    <!-- end cta -->
-
 
     <!-- s-stats
     ================================================== -->
