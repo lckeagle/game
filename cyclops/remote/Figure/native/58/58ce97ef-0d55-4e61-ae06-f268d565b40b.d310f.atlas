@@ -1,0 +1,97 @@
+
+dragon.png
+size: 414,944
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+body
+  rotate: false
+  xy: 265, 698
+  size: 133, 244
+  orig: 133, 244
+  offset: 0, 0
+  index: -1
+cibang
+  rotate: false
+  xy: 2, 610
+  size: 261, 332
+  orig: 261, 332
+  offset: 0, 0
+  index: -1
+cibang_left
+  rotate: true
+  xy: 2, 273
+  size: 335, 253
+  orig: 335, 253
+  offset: 0, 0
+  index: -1
+datui
+  rotate: true
+  xy: 257, 275
+  size: 44, 81
+  orig: 44, 81
+  offset: 0, 0
+  index: -1
+datui_right
+  rotate: true
+  xy: 257, 275
+  size: 44, 81
+  orig: 44, 81
+  offset: 0, 0
+  index: -1
+fire
+  rotate: true
+  xy: 2, 108
+  size: 163, 410
+  orig: 163, 410
+  offset: 0, 0
+  index: -1
+hand_left
+  rotate: true
+  xy: 104, 36
+  size: 70, 179
+  orig: 70, 179
+  offset: 0, 0
+  index: -1
+hand_right
+  rotate: false
+  xy: 285, 2
+  size: 80, 104
+  orig: 80, 104
+  offset: 0, 0
+  index: -1
+head_down
+  rotate: false
+  xy: 2, 18
+  size: 100, 88
+  orig: 100, 88
+  offset: 0, 0
+  index: -1
+head_up
+  rotate: false
+  xy: 257, 321
+  size: 135, 102
+  orig: 135, 102
+  offset: 0, 0
+  index: -1
+leg
+  rotate: false
+  xy: 357, 616
+  size: 54, 80
+  orig: 54, 80
+  offset: 0, 0
+  index: -1
+leg2
+  rotate: true
+  xy: 265, 615
+  size: 81, 90
+  orig: 81, 90
+  offset: 0, 0
+  index: -1
+tail
+  rotate: true
+  xy: 257, 425
+  size: 183, 153
+  orig: 183, 153
+  offset: 0, 0
+  index: -1
